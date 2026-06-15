@@ -537,6 +537,59 @@
   }
   .news-item::before { content: "▸ "; color: var(--gold); }
 
+  /* DESIGN SPECIMEN GRID */
+  .design-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 10px;
+    margin: 14px 0;
+  }
+  .design-link {
+    display: block;
+    text-decoration: none;
+    border: 1px solid var(--dark-gold);
+    background: linear-gradient(180deg, #0c0d16 0%, #080808 100%);
+    padding: 12px 14px;
+    transition: border-color .2s, box-shadow .2s, background .2s, transform .2s;
+  }
+  .design-link:hover {
+    border-color: var(--gold);
+    box-shadow: 0 0 16px rgba(200,169,74,0.3), inset 0 0 20px rgba(0,0,0,0.5);
+    background: linear-gradient(180deg, #13141f 0%, #0a0a0a 100%);
+    transform: translateY(-2px);
+  }
+  .design-link .spec {
+    display: block;
+    font-family: 'Courier Prime', monospace;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: var(--red);
+    text-transform: uppercase;
+  }
+  .design-link .dl-name {
+    display: block;
+    font-family: 'IM Fell English', serif;
+    font-size: 20px;
+    color: var(--gold);
+    margin: 2px 0 5px;
+  }
+  .design-link .dl-desc {
+    display: block;
+    font-family: 'Courier Prime', monospace;
+    font-size: 10px;
+    color: #8a7a50;
+    line-height: 1.55;
+  }
+  .design-link .dl-go {
+    display: block;
+    font-family: 'Courier Prime', monospace;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #5a4a20;
+    margin-top: 9px;
+  }
+  .design-link:hover .dl-go { color: var(--gold); }
+
   .glow-gold {
     animation: glowpulse 3s ease-in-out infinite;
   }
@@ -584,6 +637,7 @@
   <a href="#about">About Us</a>
   <a href="#portfolio">Portfolio</a>
   <a href="#boyd-hill">Boyd Hill</a>
+  <a href="#design-lab">Storefronts</a>
   <a href="#team">The Team</a>
   <a href="#contact">Contact</a>
   <a href="#guestbook">Guestbook</a>
@@ -672,6 +726,7 @@
       <div class="news-item"><strong style="color:var(--gold)">INFRASTRUCTURE NOTICE:</strong> The Investors authorize migration to a proprietary in-house hosting platform. A recurring third-party expenditure in the low double digits — monthly — has been flagged and will be eliminated. <strong style="color:var(--gold)">TARGET: Q3 2026.</strong></div>
       <div class="news-item">Boyd Hill Snowskates announces expanded product line for upcoming season.</div>
       <div class="news-item">The Investors complete annual review of Pacific Northwest action sports market.</div>
+      <div class="news-item"><strong style="color:var(--gold)">DESIGN REVIEW:</strong> Brand Identity Working Group publishes six candidate storefronts for Boyd Hill. <a href="#design-lab" style="color:var(--gold);">View specimens »</a></div>
       <div class="news-item">JT, JV & JK attend Bonney Lake Chamber of Commerce luncheon.</div>
     </div>
 
@@ -809,6 +864,69 @@
         <p>We respect <strong>Hovland Snowskates</strong> as the incumbent. They are a real company with a real history. We note their existence. We do not, however, believe their position is unassailable. Boyd Hill is coming. The Investors are patient. These things take time.</p>
 
         <p>We expect the snowskate market to look different in five years. We have planned accordingly.</p>
+      </div>
+    </div>
+
+    <!-- DESIGN LAB PANEL -->
+    <div class="content-panel" id="design-lab">
+      <div class="panel-header">
+        <span class="panel-header-icon">◆</span>
+        <span class="panel-title">Portfolio Initiative: Boyd Hill Digital Storefront</span>
+      </div>
+      <div class="panel-body">
+        <div><span class="featured-badge">Brand Identity Working Group · Confidential</span></div>
+
+        <p>As part of the Q3 platform modernization mandate, The Investors commissioned a comprehensive review of Boyd Hill Snowskates' digital storefront. Six independent brand-identity studies were produced at considerable expense. The committee has reviewed all six. The committee has not reached consensus.</p>
+
+        <p>In the interest of shareholder transparency, the candidate storefronts are made available for direct inspection below. Each specimen is fully operational and draws from the same live product catalog; only the presentation differs. Evaluate at your discretion.</p>
+
+        <div class="under-construction">⚠ INTERNAL REVIEW MATERIALS — DO NOT FORWARD (forward freely) ⚠</div>
+
+        <div class="design-grid">
+          <a class="design-link" href="https://boydhill.theinvestorsscg.com/?theme=classic" target="_blank" rel="noopener">
+            <span class="spec">Specimen A</span>
+            <span class="dl-name">Classic</span>
+            <span class="dl-desc">The incumbent presentation. Restrained, defensible, and approved by counsel without comment.</span>
+            <span class="dl-go">REVIEW STOREFRONT »</span>
+          </a>
+          <a class="design-link" href="https://boydhill.theinvestorsscg.com/?theme=take2" target="_blank" rel="noopener">
+            <span class="spec">Specimen B</span>
+            <span class="dl-name">Backcountry</span>
+            <span class="dl-desc">Rugged, technical, fit-for-purpose. Field-tested at altitude. The CFO's preferred candidate.</span>
+            <span class="dl-go">REVIEW STOREFRONT »</span>
+          </a>
+          <a class="design-link" href="https://boydhill.theinvestorsscg.com/?theme=take3" target="_blank" rel="noopener">
+            <span class="spec">Specimen C</span>
+            <span class="dl-name">90s Acid</span>
+            <span class="dl-desc">A bold reallocation of risk. The Working Group remains, at the time of writing, divided.</span>
+            <span class="dl-go">REVIEW STOREFRONT »</span>
+          </a>
+          <a class="design-link" href="https://boydhill.theinvestorsscg.com/?theme=take4" target="_blank" rel="noopener">
+            <span class="spec">Specimen D</span>
+            <span class="dl-name">Surf Chill</span>
+            <span class="dl-desc">Warm, approachable, sun-faded. Flagged by one partner as "possibly too relaxed for a growth company."</span>
+            <span class="dl-go">REVIEW STOREFRONT »</span>
+          </a>
+          <a class="design-link" href="https://boydhill.theinvestorsscg.com/?theme=take5" target="_blank" rel="noopener">
+            <span class="spec">Specimen E</span>
+            <span class="dl-name">Retro Gold</span>
+            <span class="dl-desc">Old money. Mahogany. Engraved. Best reviewed in a leather chair with the door closed.</span>
+            <span class="dl-go">REVIEW STOREFRONT »</span>
+          </a>
+          <a class="design-link" href="https://boydhill.theinvestorsscg.com/?theme=take6" target="_blank" rel="noopener">
+            <span class="spec">Specimen F</span>
+            <span class="dl-name">Win95</span>
+            <span class="dl-desc">A deliberate return to fundamentals. Fully Y2K-ready. Best viewed in Internet Explorer 6.</span>
+            <span class="dl-go">REVIEW STOREFRONT »</span>
+          </a>
+        </div>
+
+        <p style="font-size:12px;color:#7a6a40;">The full storefront — with a live design selector to switch between all six in one window — is available at <a href="https://boydhill.theinvestorsscg.com/" target="_blank" rel="noopener" style="color:var(--gold);">boydhill.theinvestorsscg.com</a>. Direct all aesthetic grievances to the Working Group.</p>
+
+        <blockquote>
+          "We commissioned one website. They returned six. This is, apparently, how it is done now."
+          <cite>— The Investors, Committee Minutes (Redacted)</cite>
+        </blockquote>
       </div>
     </div>
 
